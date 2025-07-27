@@ -176,10 +176,10 @@ namespace VirtualDesktop.FaceTracking
 
             eye.Left.Openness = 
                 1.0f - (float)Math.Max(0, Math.Min(1, expressions[(int)Expressions.EyesClosedL]
-                + expressions[(int)Expressions.CheekRaiserL] * expressions[(int)Expressions.LidTightenerL]));
+                + expressions[(int)Expressions.EyesLookDownL]));
             eye.Right.Openness =
                 1.0f - (float)Math.Max(0, Math.Min(1, expressions[(int)Expressions.EyesClosedR]
-                + expressions[(int)Expressions.CheekRaiserR] * expressions[(int)Expressions.LidTightenerR]));
+                + expressions[(int)Expressions.EyesLookDownR]));
 
             #endregion
 
